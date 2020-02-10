@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suraj.greenlightplanetandroidassignment">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DarkActionBarTheme">
+        <activity
+            android:name=".ui.employee.EmployeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.area.AreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.region.RegionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.zone.ZoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.country.CountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
